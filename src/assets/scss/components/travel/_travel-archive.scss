@@ -1,0 +1,158 @@
+.c-travel-archive {
+  &__header {
+    margin-top: 5px;
+    margin-bottom: 70px;
+    @media (max-width: 767px) {
+      margin-bottom: 35px;
+    }
+    &-text {
+      padding-right: 20px;
+      @media (max-width: 959px) {
+        padding: 0;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        margin-bottom: 1.25rem;
+      }
+
+      p {
+        font-size: rem-calc(18);
+        @include font-body;
+        @media (max-width: 959px) {
+          margin: 0;
+        }
+      }
+    }
+    
+    &--bottom {
+      align-items: center;
+      margin: 70px 0.625rem;
+      @media (max-width: 767px) {
+        margin: 50px 0 0.625rem;
+      }
+      &-text {
+        padding: 0 1.25rem;
+        @media (max-width: 767px) {
+          padding: 0;
+          margin-bottom: 35px;
+        }
+      p {
+        @include font-body;
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  &__booking-form {
+    padding: 0;
+    img {
+      max-width: 200px;
+    }
+  }
+
+  &-text {
+    margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: rem-calc(18);
+      @include font-bold;
+    }
+  }
+}
+
+  &__card-container {
+    padding: 0 0.625rem;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+    justify-content: space-around;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 35px;
+    border-radius: 5px;
+
+    &:last-child {
+      @media (max-width: 767px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.625rem 0;
+    }
+
+    &-subtitle {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      @include font-bold;
+      font-size: 1.25rem;
+      color: $brand-darker;
+      padding-bottom: 0.625rem;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      flex: 1 1 auto;
+      img {
+        height: auto;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          height: 100%;
+          }
+        width: 100%;
+      }
+    }
+
+    &-text {
+      padding: 0 1.25rem 1.25rem;
+      border: 1px solid $brand-lighter;
+      border-right: 1px solid $brand-lighter;
+      border-bottom: 1px solid $brand-lighter;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1 1 auto;
+
+      &-flex-height {
+        flex: 1 1 auto;
+        margin: 15px 0 20px;
+        @include font-body;
+      }
+    }
+
+    &-readmore {
+      padding: 5px 0;
+      border-radius: 5px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @include font-bold;
+      border: 1px solid $brand-lighter;
+      margin: 25px 0 10px;
+    }
+
+    &-meta {
+      font-size: 0.875rem;
+      @include font-body;
+
+      span {
+        @include font-body;
+        color: $brand;
+      }
+    }
+  }
+}

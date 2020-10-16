@@ -1,0 +1,106 @@
+@import './settings/global';
+@import './settings/colours';
+@import './settings/break-points';
+@import './settings/typography';
+
+@import './tools/units';
+@import './tools/breakpoint';
+
+@import './generic/normalize';
+@import './generic/box-sizing';
+
+$fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import './elements/general';
+@import './elements/typography';
+@import './elements/form';
+@import './elements/print';
+
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+
+@import './objects/wp';
+@import './objects/grid';
+
+@import './utils/helpers';
+@import './utils/flex';
+@import './utils/margins';
+
+// Components
+@import './components/page';
+@import './components/widget';
+@import './components/comment';
+@import './components/search-form';
+@import './components/search-form-search-page';
+@import './components/pagination-links';
+@import './components/button';
+@import './components/_slider';
+@import './components/custom-select.scss';
+
+// Header Components
+@import './components/header';
+@import './components/header-nav';
+@import './components/header-hero';
+@import './components/hero/hero';
+
+
+// Footer Components
+@import './components/footer';
+
+// Front Page Components
+@import './components/front-page/front-page';
+@import './components/slider';
+@import './components/front-page/selection';
+
+// Blog Components
+@import './components/blog-page/blog-card';
+@import './components/blog-page/blog';
+@import './components/blog-page/blog-pagination';
+@import './components/posts/post-sidebar';
+@import './components/posts/post-full';
+@import './components/posts/post';
+
+// Travel Components
+@import './components/travel/travel-archive';
+@import './components/travel/itinerary';
+
+// Recipe Components
+@import './components/recipes/recipe-card';
+@import './components/recipes/recipe';
+@import './components/recipes/recipes';
+
+// City Guides Components
+@import './components/city-guides/city-guides';
+
+// Gallery Components
+@import './components/gallery-page/gallery';
+
+// Contact Components
+@import './components/contact/contact-form-7.scss';
+
+// 404 Components
+@import './components/search-results.scss';
+
+p:empty { 
+  display:none;
+}
+
+.modula .modula-item .jtg-title, .modula .modula-item .description, .modula .modula-item .jtg-social {
+	display: none;
+}
+
+#flexi_searchbox h1, #flexi_searchbox h2, #flexi_searchbox h3, #flexi_searchbox h4 {
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+#flexi_searchbox #b_searchboxInc .b_submitButton_wrapper .b_submitButton{
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-weight: 400 !important;
+  padding: 5px 40px !important;
+}
+
+.c-breadcrumbs {
+  padding: 0 0.625rem;
+}

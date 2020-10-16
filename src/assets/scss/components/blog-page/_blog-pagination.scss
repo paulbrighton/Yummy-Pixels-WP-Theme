@@ -1,0 +1,39 @@
+.c-blog__pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+
+  &--next a {
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f061";
+      margin-left: 5px;
+    }
+  }
+
+  &--previous a {
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f060";
+      margin-right: 5px;
+    }
+  }
+
+  &--next a,
+  &--previous a {
+    @include font-bold;
+    padding: 7px 20px;
+    border: 1px solid $brand;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-blog__pagination {
+    font-size: 1rem;
+    margin: 25px 0 30px;
+  }
+}

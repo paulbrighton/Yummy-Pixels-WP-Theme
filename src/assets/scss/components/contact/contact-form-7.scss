@@ -1,0 +1,15 @@
+.wpcf7-response-output {
+  color: $white;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border: 2px solid $success-colour;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+  border: 2px solid $warning-colour;
+}
+
+.wpcf7-not-valid-tip {
+  color: $danger-colour;
+}

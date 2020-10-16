@@ -1,0 +1,107 @@
+$header-font-family: $header-font-family !default;
+$header-font-weight: $header-weight-normal !default;
+$header-font-style: normal !default;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace !default;
+$font-family-serif: "serif" !default;
+$header-color: inherit !default;
+$header-lineheight: 1.2 !default;
+$header-margin-bottom: 2.125rem !default;
+$small-font-size: 80% !default;
+
+$header-small-font-color: #333333 !default;
+$paragraph-lineheight: 1.5 !default;
+$paragraph-margin-bottom: 1rem !default;
+
+$header-styles: (
+  none: (
+    "h1": (
+      "font-size": 32,
+    ),
+    "h2": (
+      "font-size": 30,
+    ),
+    "h3": (
+      "font-size": 28,
+    ),
+    "h4": (
+      "font-size": 22,
+    ),
+    "h5": (
+      "font-size": 20,
+    ),
+    "h6": (
+      "font-size": 18,
+    ),
+  ),
+  small: (
+    "h1": (
+      "font-size": 34,
+    ),
+    "h2": (
+      "font-size": 32,
+    ),
+    "h3": (
+      "font-size": 28,
+    ),
+    "h4": (
+      "font-size": 25,
+    ),
+    "h5": (
+      "font-size": 20,
+    ),
+    "h6": (
+      "font-size": 18,
+    ),
+  ),
+  large: (
+    "h1": (
+      "font-size": 36,
+    ),
+    "h2": (
+      "font-size": 34,
+    ),
+    "h3": (
+      "font-size": 28,
+    ),
+    "h4": (
+      "font-size": 24,
+    ),
+    "h5": (
+      "font-size": 20,
+    ),
+    "h6": (
+      "font-size": 18,
+    ),
+  ),
+) !default;
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('../fonts/lato-v16-latin-regular.woff2') format('woff2'),
+       url('../fonts/lato-v16-latin-regular.woff') format('woff');
+}
+
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
+    url('../fonts/roboto-condensed-v18-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-condensed-v18-latin-regular.woff') format('woff');
+  font-display: swap;
+}
+
+@mixin font-body() {
+  font-family: "Lato", sans-serif;
+  font-weight: 400 !important;
+}
+
+@mixin font-bold() {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400 !important;
+}

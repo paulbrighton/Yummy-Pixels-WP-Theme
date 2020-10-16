@@ -1,0 +1,45 @@
+.c-header {
+  color: $brand;
+  height: 60px;
+  align-items: center;
+
+  @media (max-width: 1023px) {
+    padding: 0;
+  }
+
+  &__main {
+    background-color: $white;
+    border-bottom: 1px solid $brand-lighter;
+  }
+
+  &__blogname {
+    color: $brand;
+    &:hover {
+      color: $brand-lighter;
+    }
+  }
+  &__logo {
+    font-size: rem-calc(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+    img {
+      max-width: 150px;
+    }
+
+    &-subtitle {
+        max-width: 150px;
+        text-align: center;
+        margin: -3px 0 3px 0;
+        padding-bottom: 5px;
+      p {
+        font-size: 0.875rem;
+        @include font-bold;
+        color: $black;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

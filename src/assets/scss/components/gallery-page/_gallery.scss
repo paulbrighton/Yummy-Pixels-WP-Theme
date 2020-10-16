@@ -1,0 +1,39 @@
+.c-gallery {
+  &__header {
+    &--bottom {
+      padding: 0 1.25rem;
+      @media (max-width: 767px) {
+        padding: 0.625rem;
+      }
+      p {
+        @include font-body;
+        font-size: 1.125rem;
+      }
+    }
+  }
+  &__container {
+    padding: 0 1.25rem;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+}
+
+.modula-fancybox-caption__body {
+  padding: 15px 0 10px;
+  a:hover {
+    text-decoration: none;
+  }
+  .c-gallery__buy-btn {
+    @include font-bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 25px;
+    &:hover {
+      color: $white !important;
+      text-decoration: none;
+      border: 1px solid $white;
+
+    }
+  }
+}

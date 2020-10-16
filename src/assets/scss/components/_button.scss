@@ -1,0 +1,14 @@
+button {
+  outline: none;
+}
+
+.c-button {
+
+  &--selection-card {
+    border: 1px solid $brand-lighter;
+      padding: 5px 50px;
+      border-radius: 5px;
+      text-align: center;
+      @include font-bold;
+  }
+}

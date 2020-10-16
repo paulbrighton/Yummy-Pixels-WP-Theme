@@ -1,0 +1,158 @@
+.c-recipe {
+  &__container {
+    padding: 0 0.625rem;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  h2 {
+     margin-bottom: 1.875rem;
+  }
+  &__breadcrumbs {
+    margin-left: 0.625rem;
+  }
+
+  &__header {
+    margin-top: 5px;
+    margin: 5px -10px 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    h1 {
+      margin: 10px 0 25px;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    margin: 0 auto 25px;
+    padding: 0 5px;
+    text-align: center;
+    @media (max-width: 767px) {
+      width: 95%;
+    }
+    @media (min-width: 768px) {
+      width: 65%;
+    }
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+    p {
+      font-size: rem-calc(20);
+      @include font-bold;
+      @media (max-width: 767px) {
+        width: 95%;
+      }
+    }
+  }
+
+  &__info {
+    margin-bottom: 30px;
+
+    &-container {
+      display: flex;
+      justify-content: center;
+      padding: 0 0.625rem;
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+      @media (min-width: 1024px) {
+        padding: 0 100px;
+      }
+    }
+
+    &-content {
+      p {
+        text-align: center;
+        margin-top: 15px;
+        @include font-bold;
+        color: $brand-darker;
+
+        @media (max-width: 767px) {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    &-image {
+      img {
+        width: 75px;
+        height: 75px;
+
+        @media (max-width: 767px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  &__ingredients {
+    padding: 0 1.25rem;
+    @media (max-width: 767px) {
+      margin-bottom: 50px;
+      padding: 0;
+    }
+    @media (min-width: 1460px) {
+      margin-bottom: 50px;
+      padding: 0;
+    }
+
+    ol {
+      li {
+        list-style: none;
+        margin-left: -1.25rem;
+      }
+    }
+
+    h3 {
+      margin-bottom: 0.625rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__directions {
+    padding: 0 1.25rem;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+    @media (min-width: 1420px) {
+      margin-bottom: 50px;
+      padding: 0;
+    }
+    
+    ol {
+      counter-reset: olNumbers;
+      
+      li {
+        margin-bottom: 1rem;
+        list-style: none;
+        margin-left: -1.25rem;
+      }
+
+      li:before {
+        counter-increment: olNumbers;
+        content:counter(olNumbers) ". ";
+        color: $brand;
+        @include font-bold;    
+        display: inline-block;
+        text-align: center;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__sidebar {
+    @media (max-width: 1023px) {
+      padding-top: 50px;
+    }
+  }
+}

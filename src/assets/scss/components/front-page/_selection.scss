@@ -1,0 +1,83 @@
+.c-selection {
+    padding: 1.25rem 0;
+
+    &__container {
+      margin: 0 0.625rem;
+      @media (max-width: 767px) {
+        margin: 0;
+      }
+    }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: $white;
+    padding:  2.25rem 1.25rem;
+    border: 1px solid $brand-lighter;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    @media (min-width: 960px) {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      margin: 0;
+    }
+
+    &-text {
+      margin-bottom: 25px;
+      @include font-body;
+
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+
+      @media (max-width: 959px) {
+        padding: 0 150px;
+      }
+    
+    }
+
+    p {
+      flex: 1 0 auto;
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      min-height: 125px;
+      padding-top: 10px;
+  
+      img {
+        width: 75px;
+        height: auto;
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .c-selection {
+  
+    &__card {
+      margin-bottom: rem-calc(40);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      p {
+        flex: 1 0 auto;
+        padding: 0 25px;
+      }
+  
+      &-icon {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

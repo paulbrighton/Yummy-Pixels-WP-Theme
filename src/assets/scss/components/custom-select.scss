@@ -1,0 +1,94 @@
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  @include font-bold;
+  width: 300px;
+
+  input {
+    background-color: $white;
+    border-top: 1px solid $brand-lighter;
+    border-right: 1px solid $brand-lighter;
+    border-bottom: 1px solid $brand-lighter;
+    color: $brand;
+    @include font-bold;
+    width: 100px;
+  }
+
+  button:focus, button:hover, input[type=submit]:focus, input[type=submit]:hover {
+    color: $black;
+    outline: none;
+  }
+
+  .select-selected {
+    background-color: $white;
+    color: $brand;
+    width: 200px;
+    border: 1px solid $brand-lighter;
+  }
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: 180px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: $brand transparent transparent transparent;
+  // background-color: $brand;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent $brand transparent;
+  top: 12px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: $brand;
+  padding: 8px 16px;
+  border: 1px solid $brand-lighter;
+  border-color: transparent transparent $brand-lighter transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: $white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: 1px solid $brand-lighter;
+  border-left: 1px solid $brand-lighter;
+  border-right: 1px solid $brand-lighter;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(255, 50, 1, 0.1);
+}
+
+.category-select {
+  
+  input {
+    color: $brand !important;
+    @include font-bold;
+    &:hover {
+      background: $brand;
+      color: $white !important;
+    }
+  }
+}

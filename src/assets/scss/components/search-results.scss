@@ -1,0 +1,25 @@
+.c-search-results {
+  padding: 0 1.25rem;
+  @media (max-width: 767px) {
+    padding: 0 0.625rem;
+  }
+  li {
+    list-style-type: none;
+    border: 1px solid $brand-lighter;
+    padding: 5px 10px;
+    margin: 0 20px 15px 0;
+    display: inline-block;
+    max-width:50%;
+    word-break:break-all;
+    border-radius: 5px;
+  }
+  h2 {
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+}

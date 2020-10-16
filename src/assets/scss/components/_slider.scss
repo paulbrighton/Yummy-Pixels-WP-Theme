@@ -1,0 +1,44 @@
+.c-slider {
+  &-button {
+    font-size: 1.125rem;
+    @include font-bold;
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 5px;
+    padding: 3px 20px;
+    &:hover {
+      padding: 4px 21px;
+      color: $white;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.625rem 0 1.25rem;
+
+  list-style-type: none;
+
+  li {
+    margin: 0 0.3125rem;
+  }
+
+  button {
+    display: block;
+    width: 0.875rem;
+    height: 0.875rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    text-indent: -9999px;
+  }
+
+  li.slick-active button {
+    background-color: rgba($color: $brand-orange, $alpha: 0.3);
+  }
+}
