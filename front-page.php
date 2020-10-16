@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<!-- Testing Deploy to Hostinger -->
+<!-- Testing Deploy to Hostinger auto deploy -->
 
 <?php get_template_part('template-parts/slider/slider-hero', '_themename') ?>
 
