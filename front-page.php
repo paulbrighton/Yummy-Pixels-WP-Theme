@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!-- Testing Deploy to Hostinger -->
 
 <?php get_template_part('template-parts/slider/slider-hero', '_themename') ?>
 
