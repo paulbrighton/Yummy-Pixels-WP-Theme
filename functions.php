@@ -77,3 +77,16 @@ function wpse241060_widget_recent_post_4_cpt( $params )
     $params['post_type'] = array( 'post', 'recipes');
     return $params;
 }
+
+function my_exclude_ipad_and_tablets( $is_mobile ) {
+    if( 
+		false !== strpos( strtolower( $_SERVER['HTTP_USER_AGENT'] ),'ipad' )
+		|| false !== strpos( strtolower( $_SERVER['HTTP_USER_AGENT'] ),'tablet' )
+		|| false !== strpos( strtolower( $_SERVER['HTTP_USER_AGENT'] ),'playbook' )
+		|| false !== strpos( strtolower( $_SERVER['HTTP_USER_AGENT'] ),'mobi|opera mini' )
+	){
+        return false;
+    }
+    return $is_mobile;
+}
+add_filter( 'wp_is_mobile','my_exclude_ipad_and_tablets' );
